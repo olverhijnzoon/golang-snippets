@@ -1,0 +1,13 @@
+BINARY=golang-snippets
+%.o: %.mod
+
+build_go:
+	go build -o ./${BINARY} ./main.go
+	
+run_go:
+	./${BINARY}
+
+go: build_go run_go
+
+clean_go:
+	rm -f ./${BINARY}
