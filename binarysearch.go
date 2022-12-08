@@ -36,6 +36,20 @@ func high(arr []int, target int) int {
 	return high
 }
 
+// with binary search give back the number of occurrences of the target value in the array
+func count(arr []int, target int) int {
+	lowIndex := low(arr, target)
+	highIndex := high(arr, target)
+	return highIndex - lowIndex + 1
+}
+
+// with binary search give back the first and last indexes and the count of the target value in the array
+func firstLastCount(arr []int, target int) (int, int, int) {
+	lowIndex := low(arr, target)
+	highIndex := high(arr, target)
+	return lowIndex, highIndex, highIndex - lowIndex + 1
+}
+
 func main() {
 	fmt.Println("### Golang Snippets ### Binary Search")
 
@@ -44,6 +58,7 @@ func main() {
 
 	for index, value := range array {
 		fmt.Printf("array[%d] = %d ", index, value)
-		fmt.Printf("low: %d, high: %d\n", low(array, value), high(array, value))
+		lowIndex, highIndex, count := firstLastCount(array, value)
+		fmt.Printf("target: %d, low: %d, high: %d, count: %d\n", value, lowIndex, highIndex, count)
 	}
 }
