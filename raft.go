@@ -16,7 +16,7 @@ func main() {
 		Type:    raftpb.MsgHup,
 		From:    1,
 		To:      2,
-		Term:    3,
+		Term:    3,dw
 		LogTerm: 4,
 		Index:   5,
 		Entries: []raftpb.Entry{{Index: 6, Term: 7}},
