@@ -56,9 +56,15 @@ func main() {
 	// sorted array
 	array := []int{2,2,2,2,2,2,2,3,5,5,6,6,7,7,7,7,13,13}
 
-	for index, value := range array {
-		fmt.Printf("array[%d] = %d ", index, value)
-		lowIndex, highIndex, count := firstLastCount(array, value)
-		fmt.Printf("target: %d, low: %d, high: %d, count: %d\n", value, lowIndex, highIndex, count)
+	// use of map to keep track of the mentioned target values
+	targets := map[int]bool{}
+
+	for index, value := range array {	
+		if _, ok := targets[value]; !ok {
+			targets[value] = true
+			lowIndex, highIndex, count := firstLastCount(array, value)
+			fmt.Printf("Result: target %d, low %d, high %d, count %d\n", value, lowIndex, highIndex, count)
+			fmt.Printf("Check: array[%d] = %d \n", index, value)
+		}
 	}
 }
