@@ -1,8 +1,8 @@
-BINARY=golang-snippets
+BINARY=binarysearch
 %.o: %.mod
 
 build_go:
-	go build -o ./${BINARY} ./main.go
+	go build -o ./${BINARY} ./${BINARY}.go
 	
 run_go:
 	./${BINARY}
