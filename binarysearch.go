@@ -19,6 +19,22 @@ func low(arr []int, target int) int{
 	return low
 }
 
+// with binary search give back index of the last element in the sorted array that is less or equal to target
+func high(arr []int, target int) int {
+	low := 0
+	high := len(arr) - 1
+
+	for low <= high {
+		mid := (low + high) / 2
+		if arr[mid] <= target {
+			low = mid + 1
+		} else {
+			high = mid - 1
+		}
+	}
+
+	return high
+}
 
 func main() {
 	fmt.Println("### Golang Snippets ### Binary Search")
@@ -28,6 +44,6 @@ func main() {
 
 	for index, value := range array {
 		fmt.Printf("array[%d] = %d ", index, value)
-		fmt.Printf("target: %d, low: %d\n", value, low(array,value))
+		fmt.Printf("low: %d, high: %d\n", low(array, value), high(array, value))
 	}
 }
