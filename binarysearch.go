@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"sort"
+)
+
 
 // with binary search give back index of the first element in the sorted array that is greater or equal to target
 func low(arr []int, target int) int{
@@ -50,11 +55,21 @@ func firstLastCount(arr []int, target int) (int, int, int) {
 	return lowIndex, highIndex, highIndex - lowIndex + 1
 }
 
+// create a sorted array of 42 random elements
+func createSortedArray() []int {
+	array := make([]int, 42)
+	for i := 0; i < 42; i++ {
+		array[i] = rand.Intn(42)
+	}
+	sort.Ints(array)
+	return array
+}
+
 func main() {
 	fmt.Println("### Golang Snippets ### Binary Search")
 
-	// sorted array
-	array := []int{2,2,2,2,2,2,2,3,5,5,6,6,7,7,7,7,13,13}
+	// create sorted array
+	array := createSortedArray()
 
 	// use of map to keep track of the mentioned target values
 	targets := map[int]bool{}
