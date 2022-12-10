@@ -1,5 +1,4 @@
-BINARY=binarysearch
-%.o: %.mod
+BINARY=panic
 
 build_go:
 	go build -o ./${BINARY} ./${BINARY}.go

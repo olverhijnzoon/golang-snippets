@@ -9,7 +9,7 @@ import (
 
 func main() {
 
-	fmt.Println("### Golang Snippets ###")
+	fmt.Println("### Golang Snippets ### Unfinished Raft Example!!!")
 
 	// create new Raft message
 	msg := &raftpb.Message{
