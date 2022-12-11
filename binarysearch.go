@@ -6,18 +6,17 @@ import (
 	"sort"
 )
 
-
 // with binary search give back index of the first element in the sorted array that is greater or equal to target
-func low(arr []int, target int) int{
+func low(arr []int, target int) int {
 	low := 0
-	high:= len(arr)-1
+	high := len(arr) - 1
 
 	for low <= high {
-		mid := (low+high)/2
-		if arr[mid]>=target{
-			high = mid -1
+		mid := (low + high) / 2
+		if arr[mid] >= target {
+			high = mid - 1
 		} else {
-			low = mid +1
+			low = mid + 1
 		}
 	}
 
@@ -66,7 +65,9 @@ func createSortedArray() []int {
 }
 
 func main() {
-	fmt.Println("### Golang Snippets ### Binary Search")
+
+	fmt.Println("# Golang Snippets")
+	fmt.Println("## Binary Search")
 
 	// create sorted array
 	array := createSortedArray()
@@ -74,7 +75,7 @@ func main() {
 	// use of map to keep track of the mentioned target values
 	targets := map[int]bool{}
 
-	for index, value := range array {	
+	for index, value := range array {
 		if _, ok := targets[value]; !ok {
 			targets[value] = true
 			lowIndex, highIndex, count := firstLastCount(array, value)
