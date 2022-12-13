@@ -22,7 +22,7 @@ func main() {
 
 	// Set up HTTP client and request to Twitter API
 	client := &http.Client{}
-	req, _ := http.NewRequest("GET", "https://api.twitter.com/2/tweets/counts/recent?query=lang%3Aen%20%22%24TSLA%22&start_time=2022-12-04T00:00:00.000Z&end_time=2022-12-09T00:00:00.000Z&granularity=day&search_count.fields=tweet_count", nil)
+	req, _ := http.NewRequest("GET", "https://api.twitter.com/2/tweets/counts/recent?query=lang%3Aen%20%22%24TSLA%22&start_time=2022-12-08T00:00:00.000Z&end_time=2022-12-13T00:00:00.000Z&granularity=day&search_count.fields=tweet_count", nil)
 
 	// Ask for bearer token input and display it - supersafe
 	var token string

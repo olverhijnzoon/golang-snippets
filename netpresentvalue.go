@@ -17,6 +17,11 @@ func main() {
 
 		NPV = \sum_{t=1}^{n}\frac{CF_t}{(1+r)^t} - C_0
 
+		t 		... time of the cash flow
+		n		... number of cashflows at time 1,2, .., n
+		CF_t 	... net cash flow at time t
+		C_0		... initial cost
+		r 		... discount rate
 	*/
 
 	// Initial cost of the investment

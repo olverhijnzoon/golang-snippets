@@ -1,4 +1,4 @@
-BINARY=netpresentvalue
+BINARY=twitter
 
 build_go:
 	go build -o ./${BINARY} ./${BINARY}.go
