@@ -1,4 +1,4 @@
-BINARY=ratelimiter
+BINARY=netpresentvalue
 
 build_go:
 	go build -o ./${BINARY} ./${BINARY}.go

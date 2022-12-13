@@ -3,5 +3,7 @@ golang-snippets
 panic
 twitter
 ratelimiter
+netpresentvalue
+sphere.go
 *.sum
 *.png
