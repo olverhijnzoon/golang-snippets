@@ -1,4 +1,4 @@
-BINARY=netpresentvalue
+BINARY=eulermethod
 
 build_go:
 	go build -o ./${BINARY} ./${BINARY}.go

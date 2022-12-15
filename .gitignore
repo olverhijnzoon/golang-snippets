@@ -4,6 +4,8 @@ panic
 twitter
 ratelimiter
 netpresentvalue
+eulermethod
+finiteelementmethod.go
 sphere.go
 *.sum
 *.png
