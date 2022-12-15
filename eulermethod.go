@@ -22,7 +22,7 @@ func main() {
 	/*
 		In the example, we are solving the differential equation y' = x + y with initial conditions x0 = 0 and y0 = 1. The Euler method is a simple numerical method for approximating solutions to differential equations, and it works by taking small steps (in this case, with step size h = 0.1) and using the derivative at the current point to approximate the value of the function at the next point. There is also a second example, in which we are the harmonic oscillator equation y' = -k * y/m.
 
-		For clarification about the harmonic oscillator representations: To derive the second equation, y'' + k/m * y = 0, from the first equation, y' = -k * y/m, we can take the derivative of both sides of the first equation with respect to time. This yields the following:
+		For clarification about the harmonic oscillator representations: There is another form of the harmonic oscillator equation which is y'' + k/m * y = 0. To derive this second equation from the first equation, y' = -k * y/m, we can take the derivative of both sides of the first equation with respect to time. This yields the following:
 
 		d/dt(y') = d/dt(-k * y/m)
 		y'' = -k/m * y'
