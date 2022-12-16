@@ -5,6 +5,7 @@ twitter
 ratelimiter
 netpresentvalue
 eulermethod
+linearoptimization
 finiteelementmethod.go
 sphere.go
 *.sum
