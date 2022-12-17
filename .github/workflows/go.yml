@@ -25,4 +25,4 @@ jobs:
       run: go mod download gonum.org/v1/gonum
       
     - name: Build
-      run: make go
+      run: make god
