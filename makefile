@@ -1,4 +1,4 @@
-BINARY=linearoptimization
+BINARY=signature
 
 build_go:
 	go build -o ./${BINARY} ./${BINARY}.go
