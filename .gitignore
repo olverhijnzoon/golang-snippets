@@ -7,7 +7,9 @@ netpresentvalue
 eulermethod
 linearoptimization
 signature
+mutex
 finiteelementmethod.go
+parallelcalculations.go
 sphere.go
 *.sum
 *.png

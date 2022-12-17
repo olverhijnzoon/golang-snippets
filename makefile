@@ -1,4 +1,4 @@
-BINARY=signature
+BINARY=mutex
 
 build_go:
 	go build -o ./${BINARY} ./${BINARY}.go
