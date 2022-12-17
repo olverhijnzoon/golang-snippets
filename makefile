@@ -6,7 +6,7 @@ build_go:
 run_go:
 	./${BINARY}
 
-go: build_go run_go
+god: build_go run_go
 
 clean_go:
 	rm -f ./${BINARY}
