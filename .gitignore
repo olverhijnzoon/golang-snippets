@@ -6,6 +6,7 @@ ratelimiter
 netpresentvalue
 eulermethod
 linearoptimization
+signature
 finiteelementmethod.go
 sphere.go
 *.sum
