@@ -8,6 +8,7 @@ eulermethod
 linearoptimization
 signature
 mutex
+advents
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go

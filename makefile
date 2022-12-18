@@ -1,4 +1,4 @@
-BINARY=mutex
+BINARY=advents
 
 build_go:
 	go build -o ./${BINARY} ./${BINARY}.go
