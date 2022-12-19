@@ -9,6 +9,7 @@ linearoptimization
 signature
 mutex
 advent
+compressionalgorithms
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go

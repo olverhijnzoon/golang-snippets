@@ -1,4 +1,4 @@
-BINARY=advent
+BINARY=compressionalgorithms
 
 build_go:
 	go build -o ./${BINARY} ./${BINARY}.go
