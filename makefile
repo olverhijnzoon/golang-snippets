@@ -1,4 +1,4 @@
-BINARY=compressionalgorithms
+BINARY=hashedpassword
 
 build_go:
 	go build -o ./${BINARY} ./${BINARY}.go

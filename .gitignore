@@ -10,6 +10,7 @@ signature
 mutex
 advent
 compressionalgorithms
+hashedpassword
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go
