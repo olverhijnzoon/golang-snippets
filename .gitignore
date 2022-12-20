@@ -15,4 +15,4 @@ parallelcalculations.go
 sphere.go
 *.sum
 *.png
-bar
+bar/bar
