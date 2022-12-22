@@ -1,4 +1,4 @@
-BINARY=store
+BINARY=directorylist
 
 build_go:
 	go build -o ./${BINARY}X ./${BINARY}.go

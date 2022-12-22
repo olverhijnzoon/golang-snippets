@@ -11,6 +11,7 @@ mutexX
 adventX
 compressionalgorithmsX
 storeX
+directorylistX
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go
