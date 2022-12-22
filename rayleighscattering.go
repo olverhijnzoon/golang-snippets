@@ -58,6 +58,7 @@ func main() {
 	intensity_small := k_small * math.Pow(wavelength, -4)
 	intensity_large := k_large * math.Pow(wavelength, -4)
 
+	fmt.Println("Wavelength in nanometer:", wavelength)
 	fmt.Println("Intensity of scattered light for small particles:", intensity_small)
 	fmt.Println("Intensity of scattered light for large particles:", intensity_large)
 }
