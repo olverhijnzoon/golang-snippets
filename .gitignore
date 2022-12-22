@@ -12,6 +12,7 @@ adventX
 compressionalgorithmsX
 storeX
 directorylistX
+rayleighscatteringX
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go
