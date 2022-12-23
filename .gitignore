@@ -13,6 +13,7 @@ compressionalgorithmsX
 storeX
 directorylistX
 rayleighscatteringX
+waitgroupsX
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go
