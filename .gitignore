@@ -14,6 +14,7 @@ storeX
 directorylistX
 rayleighscatteringX
 waitgroupsX
+httpserverX
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go
