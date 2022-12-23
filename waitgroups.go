@@ -37,8 +37,6 @@ func main() {
 
 	/*
 		In this second example, the main goroutine waits for the user to press a key, then closes the done channel and waits for the goroutines to stop by calling Wait on the WaitGroup. Finally, it prints a message indicating that all goroutines have stopped.
-
-		We use the mutex to ensure that the done channel is closed only once, since multiple goroutines are accessing it concurrently. The mutex is locked before the done channel is closed and unlocked after the done channel is closed, to prevent other goroutines from closing it again.
 	*/
 
 	// Create a new WaitGroup
