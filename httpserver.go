@@ -3,10 +3,18 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"sync"
 )
 
+var counter int
+var mutex = &sync.Mutex{}
+
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Golang Snippets!")
+	// Lock the mutex to prevent concurrent access to the counter variable
+	mutex.Lock()
+	counter++
+	mutex.Unlock()
+	fmt.Fprintf(w, "You are visitor number %d", counter)
 }
 
 func main() {
@@ -15,7 +23,7 @@ func main() {
 	fmt.Println("## HTTP Server")
 
 	/*
-		This is a simple example of a HTTP server in Go.
+		This is an example of a HTTP server in Go.
 	*/
 
 	http.HandleFunc("/", handler)
