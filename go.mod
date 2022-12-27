@@ -3,6 +3,7 @@ module golang-snippets
 go 1.19
 
 require (
+	github.com/go-sql-driver/mysql v1.7.0 // indirect
 	github.com/olverhijnzoon/golang-snippets/mystore v0.0.0-20221220224357-65ae9c86d596 // indirect
 	golang.org/x/crypto v0.4.0 // indirect
 	golang.org/x/exp v0.0.0-20221215174704-0915cd710c24 // indirect

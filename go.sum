@@ -1,3 +1,5 @@
+github.com/go-sql-driver/mysql v1.7.0 h1:ueSltNNllEqE3qcWBTD0iQd3IpL/6U+mJxLkazJ7YPc=
+github.com/go-sql-driver/mysql v1.7.0/go.mod h1:OXbVy3sEdcQ2Doequ6Z5BW6fXNQTmx+9S1MCJN5yJMI=
 github.com/olverhijnzoon/golang-snippets/mystore v0.0.0-20221220224357-65ae9c86d596 h1:88HyG67hxUgaevq9IlE5kOJ6atIM8FP0mmCunu0YP+E=
 github.com/olverhijnzoon/golang-snippets/mystore v0.0.0-20221220224357-65ae9c86d596/go.mod h1:bjKeVcnM1W81XjPftXNZ84dX/MlUO2uqr+HZsbrkOM0=
 golang.org/x/crypto v0.4.0 h1:UVQgzMY87xqpKNgb+kDsll2Igd33HszWHFLmpaRMq/8=
