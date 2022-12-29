@@ -1,8 +1,8 @@
-BINARY=mysql
+BINARY=gcpstorage
 
 build_go:
 	go build -o ./${BINARY}X ./${BINARY}.go
-	
+
 run_go:
 	./${BINARY}X
 
