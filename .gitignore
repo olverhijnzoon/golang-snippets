@@ -16,6 +16,7 @@ rayleighscatteringX
 waitgroupsX
 httpserverX
 mysqlX
+gcpstorageX
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go
