@@ -1,4 +1,4 @@
-BINARY=gcpstorage
+BINARY=multichannelreceiver
 
 build_go:
 	go build -o ./${BINARY}X ./${BINARY}.go

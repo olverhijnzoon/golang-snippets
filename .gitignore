@@ -17,6 +17,7 @@ waitgroupsX
 httpserverX
 mysqlX
 gcpstorageX
+multichannelreceiverX
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go
