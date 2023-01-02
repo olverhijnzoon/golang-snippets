@@ -1,4 +1,4 @@
-BINARY=multichannelreceiver
+BINARY=oauth2
 
 build_go:
 	go build -o ./${BINARY}X ./${BINARY}.go

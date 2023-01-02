@@ -18,6 +18,7 @@ httpserverX
 mysqlX
 gcpstorageX
 multichannelreceiverX
+oauth2X
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go
