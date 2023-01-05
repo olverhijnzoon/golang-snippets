@@ -19,6 +19,8 @@ mysqlX
 gcpstorageX
 multichannelreceiverX
 oauth2X
+mapsX
+grpc/*
 finiteelementmethod.go
 parallelcalculations.go
 sphere.go

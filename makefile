@@ -1,5 +1,4 @@
-BINARY=oauth2
-
+BINARY=maps
 build_go:
 	go build -o ./${BINARY}X ./${BINARY}.go
 
