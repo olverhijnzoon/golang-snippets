@@ -1,4 +1,4 @@
-package main
+package algorithms
 
 import (
 	"fmt"
@@ -55,7 +55,7 @@ func firstLastCount(arr []int, target int) (int, int, int) {
 }
 
 // create a sorted array of 42 random elements
-func createSortedArray() []int {
+func CreateSortedArray() []int {
 	array := make([]int, 42)
 	for i := 0; i < 42; i++ {
 		array[i] = rand.Intn(42)
@@ -70,7 +70,7 @@ func main() {
 	fmt.Println("## Binary Search")
 
 	// create sorted array
-	array := createSortedArray()
+	array := CreateSortedArray()
 
 	// use of map to keep track of the mentioned target values
 	targets := map[int]bool{}
