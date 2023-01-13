@@ -20,7 +20,7 @@ gcpstorageX
 multichannelreceiverX
 oauth2X
 mapsX
-keycloak
+keycloakX
 grpc/*
 finiteelementmethod.go
 parallelcalculations.go
