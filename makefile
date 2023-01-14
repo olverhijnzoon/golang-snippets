@@ -1,4 +1,4 @@
-BINARY=maps
+BINARY=keycloak
 build_go:
 	go build -o ./${BINARY}X ./${BINARY}.go
 
