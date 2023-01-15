@@ -5,7 +5,10 @@ build_go:
 run_go:
 	./${BINARY}X
 
-god: build_go run_go
+test_go: 
+	go test -v
+
+god: test_go build_go run_go
 
 clean_go:
 	rm -f ./${BINARY}

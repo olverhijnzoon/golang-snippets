@@ -6,37 +6,38 @@ import (
 )
 
 const (
-	year         = 2022
-	firstAdvent  = 27
-	secondAdvent = 7
-	thirdAdvent  = 14
-	fourthAdvent = 21
-	dateFormat   = "2006-01-02"
-	hours        = 0
-	minutes      = 0
-	seconds      = 0
-	nanoSeconds  = 0
-	addYear      = 0
-	addMonth     = 0
-	addDay       = 1
+	year                                                 = 2022
+	firstAdvent, secondAdvent, thirdAdvent, fourthAdvent = 27, 7, 14, 21
+	dateFormat                                           = "2006-01-02"
+	hours, minutes, seconds, nanoSeconds                 = 0, 0, 0, 0
+	addYear, addMonth, addDay                            = 0, 0, 1
 )
 
 var location = time.UTC
 
-func main() {
+func calculateAdventSundays(year int) (first, second, third, fourth time.Time) {
+	// Calculate the date for the first Sunday of Advent
+	first = time.Date(year, time.November, firstAdvent, hours, minutes, seconds, nanoSeconds, location)
+	for first.Weekday() != time.Sunday {
+		first = first.AddDate(addYear, addMonth, addDay)
+	}
 
+	// Calculate the dates for the remaining Advent Sundays
+	second = first.AddDate(addYear, addMonth, secondAdvent)
+	third = first.AddDate(addYear, addMonth, thirdAdvent)
+	fourth = first.AddDate(addYear, addMonth, fourthAdvent)
+	return
+}
+
+func main() {
 	fmt.Println("# Golang Snippets")
 	fmt.Println("## Advent")
 
-	// Calculate the date for the first Sunday of Advent
-	firstSunday := time.Date(year, time.November, firstAdvent, hours, minutes, seconds, nanoSeconds, location)
-	for firstSunday.Weekday() != time.Sunday {
-		firstSunday = firstSunday.AddDate(addYear, addMonth, addDay)
-	}
+	first, second, third, fourth := calculateAdventSundays(year)
 
 	// Print the dates for the four Advent Sundays
-	fmt.Println("First Advent Sunday:", firstSunday.Format(dateFormat))
-	fmt.Println("Second Advent Sunday:", firstSunday.AddDate(addYear, addMonth, secondAdvent).Format(dateFormat))
-	fmt.Println("Third Advent Sunday:", firstSunday.AddDate(addYear, addMonth, thirdAdvent).Format(dateFormat))
-	fmt.Println("Fourth Advent Sunday:", firstSunday.AddDate(addYear, addMonth, fourthAdvent).Format(dateFormat))
+	fmt.Println("First Advent Sunday:", first.Format(dateFormat))
+	fmt.Println("Second Advent Sunday:", second.Format(dateFormat))
+	fmt.Println("Third Advent Sunday:", third.Format(dateFormat))
+	fmt.Println("Fourth Advent Sunday:", fourth.Format(dateFormat))
 }
