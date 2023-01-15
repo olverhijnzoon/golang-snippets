@@ -9,3 +9,6 @@ god: build_go run_go
 
 clean_go:
 	rm -f ./${BINARY}
+
+clean_binaries:
+	rm -f ./*X
