@@ -13,5 +13,13 @@ god: test_go build_go run_go
 clean_go:
 	rm -f ./${BINARY}
 
+compile_c:
+	gcc -o adventC advent.c
+
+run_c:
+	./${BINARY}C
+
+cdo: compile_c run_c
+
 clean_binaries:
-	rm -f ./*X
+	rm -f ./*X ./*C

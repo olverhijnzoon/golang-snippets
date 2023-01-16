@@ -21,6 +21,7 @@ multichannelreceiverX
 oauth2X
 mapsX
 keycloakX
+adventC
 grpc/*
 finiteelementmethod.go
 parallelcalculations.go
