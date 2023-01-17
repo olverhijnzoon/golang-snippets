@@ -5,6 +5,20 @@ import (
 	"math"
 )
 
+func rayleighScattering(wavelength, particleDiameter, refractiveIndex, numberOfParticles float64) (float64, float64) {
+	// Calculate k using the approximation for small particles
+	k_small := (3 * math.Pi * refractiveIndex * math.Pow(particleDiameter, 2)) / (2 * numberOfParticles)
+
+	// Alternatively, calculate k using the approximation for large particles
+	k_large := (3 * math.Pi * math.Pow(refractiveIndex, 2) * math.Pow(particleDiameter, 6)) / (2 * numberOfParticles)
+
+	// calculate the intensity of the scattered light
+	intensity_small := k_small * math.Pow(wavelength, -4)
+	intensity_large := k_large * math.Pow(wavelength, -4)
+
+	return intensity_small, intensity_large
+}
+
 func main() {
 
 	fmt.Println("# Golang Snippets")
@@ -48,17 +62,9 @@ func main() {
 	// number of particles per unit volume
 	numberOfParticles := 1e9
 
-	// Calculate k using the approximation for small particles
-	k_small := (3 * math.Pi * refractiveIndex * math.Pow(particleDiameter, 2)) / (2 * numberOfParticles)
-
-	// Alternatively, calculate k using the approximation for large particles
-	k_large := (3 * math.Pi * math.Pow(refractiveIndex, 2) * math.Pow(particleDiameter, 6)) / (2 * numberOfParticles)
-
-	// calculate the intensity of the scattered light
-	intensity_small := k_small * math.Pow(wavelength, -4)
-	intensity_large := k_large * math.Pow(wavelength, -4)
+	small, large := rayleighScattering(wavelength, particleDiameter, refractiveIndex, numberOfParticles)
 
 	fmt.Println("Wavelength in nanometer:", wavelength)
-	fmt.Println("Intensity of scattered light for small particles:", intensity_small)
-	fmt.Println("Intensity of scattered light for large particles:", intensity_large)
+	fmt.Println("Intensity of scattered light for small particles:", small)
+	fmt.Println("Intensity of scattered light for large particles:", large)
 }
