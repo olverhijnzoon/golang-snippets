@@ -5,21 +5,15 @@ build_go:
 run_go:
 	./${BINARY}X
 
-test_go: 
-	go test -v
-
-god: test_go build_go run_go
+god: build_go run_go
 
 clean_go:
 	rm -f ./${BINARY}
 
-compile_c:
-	gcc -o rayleighscatteringC rayleighscattering.c
+build_docker:
+	docker build --tag rayleighscattering .
 
-run_c:
-	./${BINARY}C
+run_docker:
+	docker run rayleighscattering
 
-cdo: compile_c run_c
-
-clean_binaries:
-	rm -f ./*X ./*C
+ddocker: build_docker run_docker
