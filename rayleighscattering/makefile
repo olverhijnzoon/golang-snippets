@@ -14,7 +14,7 @@ clean_go:
 	rm -f ./${BINARY}
 
 compile_c:
-	gcc -o adventC advent.c
+	gcc -o rayleighscatteringC rayleighscattering.c
 
 run_c:
 	./${BINARY}C
