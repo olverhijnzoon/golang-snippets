@@ -25,6 +25,7 @@ adventC
 grpc/*
 finiteelementmethod.go
 parallelcalculations.go
+prometheusX
 sphere.go
 *.png
 bar/bar
