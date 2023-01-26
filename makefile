@@ -1,4 +1,4 @@
-BINARY=prometheus
+BINARY=closures
 build_go:
 	go build -o ./${BINARY}X ./${BINARY}.go
 
