@@ -26,6 +26,7 @@ grpc/*
 finiteelementmethod.go
 parallelcalculations.go
 prometheusX
+closuresX
 sphere.go
 *.png
 bar/bar
