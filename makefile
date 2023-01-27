@@ -1,4 +1,4 @@
-BINARY=prometheus
+BINARY=mountains
 build_go:
 	go build -o ./${BINARY}X ./${BINARY}.go
 
