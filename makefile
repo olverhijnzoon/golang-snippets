@@ -1,4 +1,4 @@
-BINARY=mountains
+BINARY=matrix
 build_go:
 	go build -o ./${BINARY}X ./${BINARY}.go
 
