@@ -27,6 +27,8 @@ finiteelementmethod.go
 parallelcalculations.go
 prometheusX
 closuresX
+mountainsX
+mountains.json
 sphere.go
 *.png
 bar/bar
