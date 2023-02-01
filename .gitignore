@@ -22,6 +22,7 @@ oauth2X
 mapsX
 keycloakX
 adventC
+matrixX
 grpc/*
 finiteelementmethod.go
 parallelcalculations.go
